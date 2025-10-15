@@ -1,0 +1,1 @@
+alert("You are going to preview important websites as my bookmarks");
