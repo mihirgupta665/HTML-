@@ -1,0 +1,1 @@
+alert("Hello! you are going to preview Inline and Block elements");
