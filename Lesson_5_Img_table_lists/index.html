@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image_Tables_Lists</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img  width=600 src="zacian.jpg"  alt="Pokemon Pic">        
+        <!-- to insert image we need to write its source then and alt text to display the text if original image is not available , set the width or height to adjust the size wihout harmimng the aspect ratio -->
+        <table>
+            <thead>             <!-- thead tbody and tfoot is used  -->
+            <caption>Mihir's_Table</caption>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Language</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mihir</td>
+                    <td>AI and ML Specialist</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Muskan</td>     <!-- colspan="n" occupies n columns together -->
+                    <td rowspan="2">Bussiness Admistrator</td>      <!-- rowspan="n" occupies n rows together  -->
+                </tr>
+                <tr>
+                    <td colspan="2">Harsh</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Divyansh</td>
+                    <td colspan="2">Interpreneur</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <ul type="square">       <!-- type is used to change the points shape like : disc, circle, square -->
+            <li>Mihir</li>
+            <li>Adiba</li>
+            <li>Divyansh</li>
+        </ul>
+        <ol type="I">           <!-- num for numeric i,I for raman and  and a,A for alhabets-->
+            <li>Java</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ol>
+        <ol type="a">           <!-- num for numeric i,I for raman and  and a,A for alhabets-->
+            <li>Ice Cream</li>
+            <li>Pizza</li>
+            <li>Chiken</li>
+        </ol>
+        <script src="script.js"></script>
+    </body>
+</html>
