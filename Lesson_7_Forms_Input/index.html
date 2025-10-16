@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms_And_Input</title>
+        <meta name=description content="This page tells about cration of various forms and thier input">
+        <meta name=keyword content="Meta Keyword, Html tags, meta tags, Google ranking factors">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Mihir Developer Page</h1>
+        <h2>Form for registration in the developer course :</h2>
+        <form action="post">       <!-- Post is used to send data to server, Get is used to just hit the server for response -->
+            <div>
+                <label for="username">Enter Username : </label>     <!-- is used to add text before input the input is specified by a attribute named "id" -->
+                <input required type="text" id="username" name="UserName" placeholder="Enter Your Name" autofocus>   
+                <!-- required attributes is used to make the field compulsory and autofocus attributes takes the cursor to the input field by default-->
+            </div>
+            <!-- "type" indicates the form in which input will ne given, "name" tells that the input belong to which container and "placholder" is the input area where some pre text could be written which would be over written by the input -->
+            <div>
+                <label for="male">Male : </label>
+                 <input type="radio" id="male" name="gender" value="male">     <!-- self closing tag, radio for selection and instad of placeholder we have value of the selction. -->
+                 <label for="female">Female : </label>   <!-- Label id should be differnt and the refer to the input of that id-->
+                 <input type="radio" id="female" name="gender" value="female">   <!-- same value of name gives the selction for same property-->
+            </div>
+            <div>
+                <label for="subscribe">Subsribe for Mihir's appointment</lebel>     <!-- Apart for naming label is used so that input could be taken form the text of label too. -->
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">     <!-- checkbox is used to select multiples at time and id selected value(yes)  attributes goes to the server-->
+            </div>
+            <div>
+                <label for="comments">Enter your Comments : </label>
+                <br>   <!-- is used to break the line -->
+                <textarea id="comments" name="comments" rows=6 cols="50"></textarea>    <!-- create a text area to be writee note: rows ad columns need to be specified -->
+            </div>
+            <div>
+                <label for="friuts">Enter your favourite fruit : </label>
+                <select id="fruits" name="fruits">      <!-- creates a drop down selection option -->
+                    <option value="Banana">Banana</option>      <!-- option need to be specified using values -->
+                    <option value="Apple">Apple</option>
+                    <option value="Cherry">Cherry</option>
+                </select>
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
