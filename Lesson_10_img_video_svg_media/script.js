@@ -1,0 +1,1 @@
+alert("You are about to preview images, video, SVGs and iframes");
