@@ -1,0 +1,1 @@
+alert("You are about to preview IDs and classes demonstration.");
